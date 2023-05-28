@@ -1,0 +1,1297 @@
+<html>
+<title>The History of the Development of Parallel Computing</title>
+<body>
+<h1>The History of the Development of Parallel Computing</h1>
+
+<pre>
+     ====================================================
+     Gregory V. Wilson                 gvw@cs.toronto.edu
+            From the crooked timber of humanity
+              No straight thing was ever made
+     ====================================================</pre>
+<p>
+<h2>= * = * = * = * 1955 * = * = * = * =</h2>
+<p>
+[1] IBM introduces the 704. Principal architect is Gene Amdahl; it is the first commercial machine with floating-point hardware, and is capable of approximately 5 kFLOPS.
+<p>
+<h2>= * = * = * = * 1956 * = * = * = * =</h2>
+<p>
+[2] IBM starts 7030 project (known as STRETCH) to produce supercomputer for Los Alamos National Laboratory (LANL). Its goal is to produce a machine with 100 times the performance of any available at the time.
+<p>
+[3] LARC (Livermore Automatic Research Computer) project begins to design supercomputer for Lawrence Livermore National Laboratory (LLNL).
+<p>
+[4] Atlas project begins in the U.K. as joint venture between University of Manchester and Ferranti Ltd. Principal architect is Tom Kilburn.
+<p>
+<h2>= * = * = * = * 1957 * = * = * = * =</h2>
+<p>
+[5] Digital Equipment Corporation (DEC) founded.
+<p>
+<h2>= * = * = * = * 1958 * = * = * = * =</h2>
+<p>
+[6] Control Data Corporation (CDC) founded.
+<p>
+[7] Bull of France announces the Gamma 60 with multiple functional units and fork & join operations in its instruction set. 19 are later built.
+<p>
+[8] John Cocke and Daniel Slotnick discuss use of parallelism in numerical calculations in an IBM research memo. Slotnick later proposes SOLOMON, a SIMD machine with 1024 1-bit PEs, each with memory for 128 32-bit values. The machine is never built, but the design is the starting point for much later work.
+<p>
+<h2>= * = * = * = * 1959 * = * = * = * =</h2>
+<p>
+[9] IBM delivers first STRETCH computer. A total of eight are built; much of the technology is re-used in the IBM 7090 which is delivered this same year.
+<p>
+[10] First LARC delivered; although it meets its performance specifications, only two are ever built.
+<p>
+<h2>= * = * = * = * 1960 * = * = * = * =</h2>
+<p>
+[11] Control Data starts development of CDC 6600.
+<p>
+[12] Honeywell introduces Honeywell 800, with hardware support for timesharing between eight programs.
+<p>
+[13] E. V. Yevreinov at the Institute of Mathematics in Novosibirsk (IMN) begins work on tightly-coupled, coarse-grain parallel architectures with programmable interconnects.
+<p>
+<h2>= * = * = * = * 1961 * = * = * = * =</h2>
+<p>
+<h2>= * = * = * = * 1962 * = * = * = * =</h2>
+<p>
+[14] CDC delivers first CDC 1604. Machine is similar to IBM 7090, featuring 48 bit words and a 6 microsec memory cycle time.
+<p>
+[15] Atlas computer becomes operational. It is the first machine to use virtual memory and paging; its instruction execution is pipelined, and it contains separate fixed- and floating-point arithmetic units, capable of approximately 200 kFLOPS.
+<p>
+[16] C. A. Petri describes Petri Nets, a theoretical framework for describing and analyzing the properties of concurrent systems.
+<p>
+[17] Burroughs introduces the D825 symmetrical MIMD multiprocessor. 1 to 4 CPUs access 1 to 16 memory modules using a crossbar switch. The CPUs are similar to the later B5000; the operating system is symmetrical, with a shared ready queue.
+<p>
+<h2>= * = * = * = * 1963 * = * = * = * =</h2>
+<p>
+<h2>= * = * = * = * 1964 * = * = * = * =</h2>
+<p>
+[18] Control Data Corporation produces the CDC 6600, the first supercomputer to be both a technical and commercial success. Each machine contained one 60-bit CPU and 10 peripheral processing units (PPUs); the CPU used a scoreboard to manage instruction dependencies.
+<p>
+[19] IBM begins design of the Advanced Computer System (ACS), capable of issuing up to seven instructions per cycle. The project was shelved in 1969, but many of the techniques were incorporated into later IBM machines.
+<p>
+[20] Daniel Slotnick proposes building a massively-parallel machine for the Lawrence Livermore National Laboratory (LLNL); the Atomic Energy Commission gives the contract to CDC instead, who build the STAR-100 to fulfil it. Slotnick's design funded by the Air Force, and evolves into the ILLIAC-IV. The machine is built at the University of Illinois, with Burroughs and Texas Instruments as primary subcontractors. Texas Instruments' Advanced Scientific Computer (ASC) also grows out of this initiative.
+<p>
+<h2>= * = * = * = * 1965 * = * = * = * =</h2>
+<p>
+[21] GE, MIT, and AT&T Bell Laboratories start work on Multics. The project's aim is to develop a general-purpose shared-memory multiprocessing timesharing system.
+<p>
+[22] Edsger Dijkstra describes and names the critical regions problem. Much later work in concurrent systems is devoted to finding safe, efficient ways to manage critical regions.
+<p>
+[23] James W. Cooley and John W. Tukey describe the Fast Fourier Transform algorithm, which is later one of the largest single consumers of floating-point cycles.
+<p>
+<h2>= * = * = * = * 1966 * = * = * = * =</h2>
+<p>
+[24] Arthur Bernstein introduces Bernstein's Condition for statement independence (the foundation of subsequent work on data dependence analysis).
+<p>
+[25] CDC introduces CDC 6500, containing two CDC 6400 processors. Principal architect is Jim Thornton.
+<p>
+[26] The UNIVAC division of Sperry Rand Corporation delivers the first multiprocessor 1108. Each contains up to 3 CPUs and 2 I/O controllers; its EXEC 8 operating system provides interface for multithread program execution.
+<p>
+[27] Michael Flynn publishes a paper describing the architectural taxonomy which bears his name.
+<p>
+[28] The Minsk-222 completed by E. V. Yevreinov at the Institute of Mathematics, Novosibirsk.
+<p>
+<h2>= * = * = * = * 1967 * = * = * = * =</h2>
+<p>
+[29] Karp, Miller and Winograd publish paper describing the use of dependence vectors and loop transformations to analyze data dependencies.
+<p>
+[30] IBM produces the 360/91 (later model 95) with dynamic instruction reordering. 20 of these are produced over the next several years; the line is eventually supplanted by the slower Model 85.
+<p>
+[31] BESM-6, developed at Institute of Precision Mechanics and Computer Technology (ITMVT) in Moscow, goes into production. Machine has 48-bit words, achieves 1 MIPS, and contains virtual memory and a pipelined processor.
+<p>
+[32] Gene Amdahl and Daniel Slotnick have published debate at AFIPS Conference about the feasibility of parallel processing. Amdahl's argument about limits to parallelism becomes known as "Amdahl's Law"; he also propounds a corollary about system balance (sometimes called "Amdahl's Other Law"), which states that a balanced machine has the same number of MIPS, Mbytes, and Mbit/s of I/O bandwidth.
+<p>
+<h2>= * = * = * = * 1968 * = * = * = * =</h2>
+<p>
+[33] Duane Adams of Stanford University coins the term "dataflow" while describing graphical models of computation in his Ph.D thesis.
+<p>
+[34] Group formed at Control Data to study the computing needs of image processing; this leads to the CDC AFP and Cyberplus designs.
+<p>
+[35] IBM 2938 Array Processor delivered to Western Geophysical (who promptly paint racing stripes on it). First commercial machine to sustain 10 MFLOPS on 32-bit floating-point operations. A programmable digital signal processor, it proves very popular in the petroleum industry.
+<p>
+[36] Edsger Dijkstra describes semaphores, and introduces the dining philosophers problem, which later becomes a standard example in concurrency theory.
+<p>
+<h2>= * = * = * = * 1969 * = * = * = * =</h2>
+<p>
+[37] George Paul, M. Wayne Wilson, and Charles Cree begin work at IBM on VECTRAN, an extension to FORTRAN 66 with array-valued operators, functions, and I/O facilities.
+<p>
+[38] CDC produces the CDC 7600 pipelined supercomputer as a follow-on to the CDC 6600.
+<p>
+[39] Work begins at Compass Inc. on a parallelizing FORTRAN compiler for the ILLIAC-IV called IVTRAN.
+<p>
+[40] Honeywell delivers first Multics system (symmetric multiprocessor with up to 8 processors).
+<p>
+<h2>= * = * = * = * 1970 * = * = * = * =</h2>
+<p>
+[41] Floating Point Systems Inc. founded by C. N. Winningstad and other former Tektronix employees. The company's mission is to manufacture floating-point co-processors for minicomputers.
+<p>
+[42] PDP-6/KA10 asymmetric multiprocessor jointly developed by MIT and DEC.
+<p>
+[43] Work on El'brus multiprocessors begins at ITMVT under direction of Vsevolod S. Burtsev. Each machine contains up to 10 CPUs, with shared memory and hardware support for fault tolerance.
+<p>
+[44] Development of C.mmp multiprocessor begins at Carnegie-Mellon with support from DEC.
+<p>
+<h2>= * = * = * = * 1971 * = * = * = * =</h2>
+<p>
+[45] CDC delivers hardwired Cyberplus parallel radar image processing system to Rome Air Development Center, where it achieves 250 times the performance of a CDC 6600.
+<p>
+[46] Intel produces the world's first single-chip CPU, the 4004 microprocessor.
+<p>
+[47] Texas Instruments delivers the first Advanced Scientific Computer (also called Advanced Seismic Computer), containing 4 pipelines with an 80 ns clock time. Vector instructions were memory-to-memory. Seven of these machines are later built, and an aggressive automatic vectorizing FORTRAN compiler is developed for them. It is the first machine to contain SECDED (Single Error Correction, Double Error Detection) memory.
+<p>
+<h2>= * = * = * = * 1972 * = * = * = * =</h2>
+<p>
+[48] Seymour Cray leaves Control Data Corporation to found Cray Research Inc. CDC cancels the 8600 project, a follow-on to the 7600.
+<p>
+[49] DEC rewrites the TOPS-10 monitor software for the PDP-10 to allow asymmetric multiprocessing.
+<p>
+[50] Quarter-sized (64 PEs) ILLIAC-IV installed at NASA Ames. Each processor has a peak speed of 4 MFLOPS; the machine's I/O system is capable of 500 Mbit/s.
+<p>
+[51] Paper studies of massive bit-level parallelism done by Stewart Reddaway at ICL. These later lead to development of ICL DAP.
+<p>
+[52] BBN builds first Pluribus machines as ARPAnet switch nodes. The switching technology developed for this project later reappears in BBN's Butterfly multiprocessors.
+<p>
+[53] Harold Stone describes the perfect shuffle network, a multi-stage interconnection network which is the basis for much later work on parallel computer topologies.
+<p>
+[54] Tony Hoare and Per Brinch Hansen independently introduce the concept of conditional critical regions, which later influences languages such as Ada and SR.
+<p>
+[55] Goodyear produces the STARAN, a 4x256 1-bit PE array processor using associative addressing and a FLIP network.
+<p>
+[56] Burroughs begins building the PEPE (Parallel Element Processor Ensemble) which contains 8x36 processing elements and uses associative addressing.
+<p>
+<h2>= * = * = * = * 1973 * = * = * = * =</h2>
+<p>
+[57] William L. Cohagan, working for Texas Instruments on a compiler for the TI ASC, describes the GCD test for data dependence analysis.
+<p>
+[58] Thacker, Lampson, Boggs, Metcalfe, and (many) others at the Xerox Palo Alto Research Center design and build the first Alto workstations and Ethernet local-area network. The potential of using clustered descendents of these machines as supercomputers widely acknowledged by early 1990s.
+<p>
+[59] Linear algebra community starts de facto standards activity. The resulting software is called the Basic Linear Algebra Subprograms (BLAS); its name is later changed to Level 1 BLAS.
+<p>
+<h2>= * = * = * = * 1974 * = * = * = * =</h2>
+<p>
+[60] Jack Dennis and David Misunas at MIT publish the first description of a dataflow computer.
+<p>
+[61] Leslie Lamport's paper "Parallel Execution of Do-Loops" lays the theoretical foundation for most later research on automatic vectorization and shared-memory parallelization. Much of the work was done in 1971-2 while Lamport was at Compass Inc.
+<p>
+[62] CDC delivers the STAR-100, the first commercial pipelined vector supercomputer, to the Lawrence Livermore National Laboratory. The machine uses a memory-to-memory architecture; its principal architects are Jim Thornton and Neil Lincoln.
+<p>
+[63] The Japanese National Aerospace Laboratory (NAL) and Fujitsu begin development of the first Japanese pipelined vector processor, the FACOM-230. Only two of these machines are ever built.
+<p>
+[64] IBM delivers the first 3838 array processor, a general-purpose digital signal processor.
+<p>
+[65] Work begins at Burroughs on designing the Burroughs Scientific Processor (BSP).
+<p>
+[66] Work begins at ICL on building a prototype DAP (Distributed Array Processor).
+<p>
+[67] Burton Smith begins designing the context-flow Heterogeneous Element Processor (HEP) for Denelcor.
+<p>
+[68] Tony Hoare describes monitors, a structured mutual exclusion mechanism which is later incorporated into many concurrent programming languages.
+<p>
+[69] The LINPACK Project begins to develop software to solve linear systems of equations.
+<p>
+[70] Tandem Computers founded by Jim Treybig and others from Hewlett-Packard to develop fault-tolerant systems for on-line transaction processing.
+<p>
+<h2>= * = * = * = * 1975 * = * = * = * =</h2>
+<p>
+[71] Cyber 200 project begins at Control Data; its architecture is to be memory-to-memory, like that of the STAR-100. Its principal architect is Neil Lincoln.
+<p>
+[72] ILLIAC-IV becomes operational at NASA Ames after concerted check-out effort.
+<p>
+[73] Duncan Lawrie describes the Omega network, a multi-stage interconnection network which is later used in several parallel computers.
+<p>
+[74] Work begins at Carnegie-Mellon University on the Cm* multiprocessor, with support from DEC. The machine combines PDP minicomputers using hierarchical buses.
+<p>
+[75] Edsger Dijkstra describes guarded commands, a mechanism for structuring concurrency which is later incorporated into many programming languages.
+<p>
+[76] Design of the iAPX 432 symmetric multiprocessor begins at Intel.
+<p>
+<h2>= * = * = * = * 1976 * = * = * = * =</h2>
+<p>
+[77] The Parafrase compiler system is developed at University of Illinois under the direction of David Kuck. A successor to a program called the Analyzer, Parafrase is used as a testbed for the development of many new ideas on vectorization and program transformation.
+<p>
+[78] Carl Hewitt, at MIT, invents the Actors model, in which control structures are patterns of messages. This model is the basis for much later work on high-level parallel programming models.
+<p>
+[79] Floating Point Systems Inc. delivers its first 38-bit AP-120B array processor. The machine issues multiple pipelined instructions every cycle.
+<p>
+[80] Cray Research delivers the first Freon-cooled CRAY-1 to Los Alamos National Laboratory.
+<p>
+[81] Fujitsu delivers the first FACOM-230 vector processor to the Japanese National Aerospace Laboratory (NAL).
+<p>
+[82] Tandem ships its first NonStop fault-tolerant disjoint-memory machines with 2 to 16 custom processors, dual inter-processor buses, and a message-based operating system. The machines are used primarily for on-line transaction processing.
+<p>
+[83] Work on the PS-2000 multiprocessor begins at the Institute of Control Problems in Moscow (IPU) and the Scientific Research Institute of Control Computers in Severodonetsk, Ukraine (NIIUVM).
+<p>
+[84] Utpal Banerjee's thesis at the University of Illinois formalizes the concept of data dependence, and describes and implements the analysis algorithm named after him.
+<p>
+[85] CDC delivers the Flexible Processor, a programmable signal processing unit with a 48-bit instruction word.
+<p>
+[86] Borroughs delivers the PEPE associative processor.
+<p>
+[87] Floating Point Systems Inc. describes loop wrapping (later called software pipelining), which it uses to program pipelined multiple instruction issue processors.
+<p>
+<h2>= * = * = * = * 1977 * = * = * = * =</h2>
+<p>
+[88] Al Davis of the University of Utah, in collaboration with Burroughs, builds the DDM1, the first operational dataflow processor.
+<p>
+[89] Haendler, Hofmann, and Schneider built the Erlangen General Purpose Architecture (EGPA) machines at the University of Erlangen in Germany. Each machines contains 5 or 21 32-bit processors in a pyramid topology, and is programmed in an extension of FORTRAN 77.
+<p>
+[90] Roger Hockney introduces n(1/2) and r(infinity) as metrics for pipeline performance.
+<p>
+[91] C.mmp multiprocessor completed at Carnegie-Mellon University. The machine contains 16 PDP-11 minicomputers connected by a crossbar to shared memories, and supports much early work on languages and operating systems for parallel machines.
+<p>
+[92] Conservative parallel discrete event simulation techniques are proposed independently by R. E. Bryant, and by K. Mani Chandy and J. Misra.
+<p>
+[93] Massively Parallel Processor (MPP) project for fast image processing first discussed by Goodyear and NASA Goddard Space Flight Center.
+<p>
+<h2>= * = * = * = * 1978 * = * = * = * =</h2>
+<p>
+[94] Arvind, Kim Gostelow and Wil Plouffe at the University of California, Irvine, describe the dataflow language Id (Irvine dataflow), which is the basis for much later work on dataflow languages.
+<p>
+[95] In his Turing Award address, John Backus (inventor of FORTRAN) argues against the use of conventional imperative languages, and for functional programming. The difficulty of programming parallel computers in imperative languages is cited as one argument against them.
+<p>
+[96] CDC demonstrates the Cyber 203, a predecessor of its Cyber 205 product.
+<p>
+[97] Per Brinch Hansen describes remote procedure call (RPC) in paper on distributed processes, although he does not use that term.
+<p>
+[98] Harry F. Jordan describes the Finite Element Machine, later built at NASA Langley, and introduces the term barrier synchronization.
+<p>
+[99] BBN begins design of multiprocessors based around the butterfly switch originally developed for the Pluribus. This switch has its roots in work on perfect-shuffle and Omega networks.
+<p>
+[100] H. T. Kung and Charles Leiserson publish the first paper describing systolic arrays.
+<p>
+[101] Tony Hoare describes the Communicating Sequential Processes (CSP) model. This mixes synchronous point-to-point communication with guarded commands, and is the basis for many later parallel programming languages.
+<p>
+[102] Steven Fortune and James Wyllie describe the PRAM model, which becomes the standard model for complexity analysis of parallel algorithms.
+<p>
+[103] Leslie Lamport describes the algorithm for creating a partial order on distributed events which bears his name.
+<p>
+<h2>= * = * = * = * 1979 * = * = * = * =</h2>
+<p>
+[104] The first dataflow multiprocessor, with 32 processors, becomes operational at CERT-ONERA in Toulouse, France.
+<p>
+[105] M. H. Van Emden and G. J. De Lucena at Waterloo propose predicate logic as a language for parallel programming. The authors have great difficulty getting their paper accepted for publication.
+<p>
+[106] Josh Fisher at Yale describes trace scheduling, a method of compiling programs written in conventional languages for wide-word machines. This later becomes the foundation for Multiflow's VLIW systems.
+<p>
+[107] IBM's John Cocke designs the 801, the first of what are later called RISC architectures.
+<p>
+[108] ICL delivers the first DAP to Queen Mary College, London.
+<p>
+[109] Inmos set up by British government to develop and produce memory chips and the transputer microprocessor.
+<p>
+[110] The first single-processor prototype of the Denelcor HEP becomes operational.
+<p>
+[111] Parviz Kermani and Leonard Kleinrock describe the virtual cut-through technique for message routing.
+<p>
+[112] Level 1 BLAS is released; the LINPACK software package is completed. The LINPACK Users' Guide contains the first LINPACK Benchmark Report, listing performance on 17 machines from the DEC PDP-10 to the Cray 1. The latter achieves 4 MFLOPS for a 100x100 matrix at full precision on a single processor.
+<p>
+[113] T. Hoshino, at the University of Kyoto, builds the PAX-9, a disjoint-memory MIMD machine containing 9 Motorola 6800 processors. This machine is the predecessor of later generations of PAX multicomputers built at Tsukuba University to study quantum chromodynamics.
+<p>
+<h2>= * = * = * = * 1980 * = * = * = * =</h2>
+<p>
+[114] PFC (Parallel FORTRAN Compiler) developed at Rice University under the direction of Ken Kennedy.
+<p>
+[115] Teradata spun off from Citibank to develop parallel database query processors.
+<p>
+[116] First PS-2000 multiprocessors go into operation in the USSR. Each contains 64 24-bit processing elements on a segmentable bus, with independent addressing in each PE. The machine's total performance is 200 MIPS. Approximately 200 are manufactured between 1981 and 1989.
+<p>
+[117] J. T. Schwartz publishes paper describing and analyzing the ultracomputer model, in which processors are connected by a shuffle/exchange network.
+<p>
+[118] Robin Milner, working at the University of Edinburgh, describes the Calculus of Communicating Systems, a theoretical framework for describing the properties of concurrent systems.
+<p>
+[119] David Padua and David Kuck at the University of Illinois develop the DOACROSS parallel construct to be used as a target in program transformation. The name DOACROSS is due to Robert Kuhn.
+<p>
+[120] DEC develops the KL10 symmetric multiprocessor. Up to three CPUs are supported, but one customer builds a five-CPU system.
+<p>
+[121] First El'brus-1, delivering 12 MIPS, passes testing in the USSR.
+<p>
+[122] Les Valiant describes and analyzes random routing, a method for reducing contention in message-routing networks. The technique is later incorporated into some machines, and is the basis for much work on PRAM emulation.
+<p>
+[123] Burroughs Scientific Processor project cancelled after one sale but before delivery.
+<p>
+<h2>= * = * = * = * 1981 * = * = * = * =</h2>
+<p>
+[124] First tagged-token dataflow computer becomes operational at the University of Manchester.
+<p>
+[125] Kuck, Kuhn, Padua, Leasure, and Wolfe, at the University of Illinois, describe the use of dependence graphs for vectorization.
+<p>
+[126] Floating Point Systems Inc. delivers the first 64-bit FPS-164 array processor, which issues multiple pipelined instructions every cycle.
+<p>
+[127] Control Data delivers the Cyber 205 vector supercomputer, which has a memory-to-memory architecture.
+<p>
+[128] DEC produces the first two-processor VAX 11/782 asymmetric multiprocessor. A small number of 4-processor machines (called the 11/784) are built.
+<p>
+[129] Bruce J. Nelson, of Xerox PARC and Carnegie-Mellon University, describes and names remote procedure call. RPC is later the basis for many parallel and distributed programming systems.
+<p>
+[130] A group led by Charles Seitz (computer science) and Geoffrey Fox (physics) begins development of a hypercube multicomputer at the Californa Institute of Technology.
+<p>
+[131] Danny Hillis writes the first description of the Connection Machine architecture in a memo from the MIT Artificial Intelligence Lab.
+<p>
+[132] BBN delivers its first Butterfly multiprocessor. The machine contains Motorola 68000s connected through multistage network to disjoint memories, giving appearance of shared memory.
+<p>
+[133] Franco Preparata and Jean Vuillemin describe the cube-connected cycles topology.
+<p>
+[134] Intel iAPX 432 multiprocessor prototype completed. Intel abandons the project, but some project members later help found companies which pursue the project's ideas.
+<p>
+[135] Silicon Graphics Inc. founded to develop high-performance graphics workstations.
+<p>
+[136] Allan Gottlieb and others describe the NYU Ultracomputer, a shared-memory machine which uses message combining in a multistage interconnection network.
+<p>
+<h2>= * = * = * = * 1982 * = * = * = * =</h2>
+<p>
+[137] Japanese Ministry of International Trade and Industry (MITI) begins the Fifth Generation Computer Systems project, with the aim of building parallel knowledge-based machines using Prolog as a kernel language. Many imitation projects soon begun elsewhere.
+<p>
+[138] Michael Wolfe's thesis on optimizing compilers for supercomputers appears, It contains the first detailed, coherent account of program transformations for vectorization and shared-memory parallelization.
+<p>
+[139] Convex (originally called Parsec) founded to pursue mini-supercomputer market.
+<p>
+[140] Steve Chen's group at Cray Research produces the first X-MP, containing two pipelined processors compatible with the CRAY-1 and shared memory.
+<p>
+[141] Hitachi introduces its S-810 vector supercomputers, with peak rates up to 800 MFLOPS.
+<p>
+[142] ILLIAC-IV decommissioned.
+<p>
+[143] Alliant (originally named Dataflow) founded to built mini-supercomputers.
+<p>
+[144] First Denelcor HEPs installed in US. A total of eight machines are eventually built.
+<p>
+[145] T. Hoshino, at Kyoto University, builds the PAX-32 and PAX-128, containing 32 and 128 Motorola 68000 processors respectively.
+<p>
+[146] Control Data improves its Flexible Processor to create the Advanced Flexible Processor (AFP), with a 210-bit instruction word.
+<p>
+[147] Fujitsu ships its first VP-200 vector supercomputer, with a peak rate of 500 MFLOPS.
+<p>
+[148] Sperry Univac delivers the first 1100/80 machines. Each contains up to four CPUs, four I/O processors, and two array processor subsystems. Pacific-Sierra Research (PSR) develops the VAST parallelizing tool to help translate DO-loops into parallel operations.
+<p>
+[149] Japanese MITI begins a ten-year Superspeed project, whose goal is a 10 GFLOPS supercomputer.
+<p>
+[150] Cosmic Cube hypercube prototype goes into operation at Caltech. The first predecessor of the CrOS (Crystalline Operating System) programming system is developed.
+<p>
+<h2>= * = * = * = * 1983 * = * = * = * =</h2>
+<p>
+[151] Loral Instrumentation begins development of the Loral DataFlo computer.
+<p>
+[152] J. R. Allen's Ph.D. thesis at Rice University introduces the concepts of loop-carried and loop-independent dependencies, and formalizes the process of vectorization.
+<p>
+[153] Ada reference manual published by the US Department of Defence. The language introduces rendezvous mechanism for interprocess communication and synchronization, and is widely criticized for its complexity.
+<p>
+[154] Scientific Computer Systems founded to design and market Cray-compatible minisupercomputers.
+<p>
+[155] ETA Systems, Inc. spun off from CDC to develop a new generation of vector supercomputers.
+<p>
+[156] NEC introduces its SX-1 vector supercomputer.
+<p>
+[157] DEC modifies its popular VMS operating system to support loosely-coupled clusters of VAXes.
+<p>
+[158] The full Mark I Cosmic Cube hypercube goes into operation at Caltech. Work begins on its successor, the Mark II.
+<p>
+[159] Sheryl Handler and Danny Hillis found Thinking Machines Corporation; Hillis' Ph.D. thesis is used as a starting point for a massively-parallel AI supercomputer.
+<p>
+[160] Impressed by the Caltech hypercubes, Steve Colley and John Palmer leave Intel to found nCUBE.
+<p>
+[161] CRAY-1 with 1 processor achieves 12.5 MFLOPS on the 100x100 LINPACK benchmark.
+<p>
+[162] The US Defence Advanced Research Projects Agency (DARPA) starts the Strategic Computing Initiative, which helps fund such machines as the Thinking Machines Connection Machine, BBN Butterfly, and CMU WARP (later Intel iWARP).
+<p>
+[163] SISAL (Streams and Iterations in a Single-Assignment Language) language definition released by Lawrence Livermore National Laboratory (LLNL), Colorado State University, DEC, and University of Manchester. A descendent of dataflow languages, it includes array operations, streams, and iterations.
+<p>
+[164] David May publishes first description of Occam, a concurrent programming language based on CSP which is closely associated with the transputer.
+<p>
+[165] Tandem ships its Fiber Optic Extension (FOX) ring network to connect distributed clusters of processors. Several systems containing more than 100 processors are built.
+<p>
+[166] Goodyear Aerospace delivers the Massively Parallel Processor (MPP) to NASA Goddard. The Machine contains 16K processors in a 128x128 grid, each with 1024 bits of memory.
+<p>
+[167] Myrias Research spun off from University of Alberta to build shared-memory mini-supercomputers.
+<p>
+[168] Sequent founded. Several of its founders are former members of Intel iAPX 432 project.
+<p>
+[169] Encore founded to build mini-supercomputers.
+<p>
+<h2>= * = * = * = * 1984 * = * = * = * =</h2>
+<p>
+[170] Ron Cytron's Ph.D. thesis at the University of Illinois extends the concept of DOACROSS loops.
+<p>
+[171] Harry F. Jordan implements The Force, the first SPMD programming language, on the Denelcor HEP.
+<p>
+[172] The CRAY X-MP family is expanded to include 1- and 4-processor machines. A CRAY X-MP running CX-OS, the first Unix-like operating system for supercomputers, is delivered to NASA Ames.
+<p>
+[173] Intel Scientific Computers is set up by Justin Rattner to produce hypercube multicomputers commercially.
+<p>
+[174] Sequent produces its first shared-memory Balance multiprocessors, using NS32016 microprocessors and a proprietary Unix-like symmetric operating system called DYNIX.
+<p>
+[175] Center for Supercomputing Research and Development (CSRD) founded at the University of Illinois. Work begins on CEDAR, a hierarchical shared-memory machine.
+<p>
+[176] Cydrome founded by B. R. Rau and others to build VLIW mini-supercomputers with architectural support for software pipelining of loops.
+<p>
+[177] Mitsui Shipbuilding Company installs a toroidal multicomputer called the PAX-64J at the University of Tsukuba.
+<p>
+[178] CRAY X-MP with 1 processor achieves 21 MFLOPS on 100x100 LINPACK.
+<p>
+[179] Robert Halstead at MIT introduces and names the futures construct in a paper describing the implementation of Multilisp.
+<p>
+[180] Unimpressed with available commercial machines, Caltech begins work on Mark III hypercube.
+<p>
+[181] Multiflow founded by Josh Fisher and others from Yale to produce very long instruction word (VLIW) supercomputers.
+<p>
+[182] Work starts on Level 2 of the BLAS software.
+<p>
+<h2>= * = * = * = * 1985 * = * = * = * =</h2>
+<p>
+[183] David Gelernter at Yale publishes a description of Linda. Key elements of it later re-appear in the Linda parallel programming system.
+<p>
+[184] Convex delivers the first of its single-processor C1 mini-supercomputers using a custom VAX-like vector processor.
+<p>
+[185] Cray Research produces the CRAY-2, with four background processors, a single foreground processor, a 4.1 nsec clock cycle, and 256 Mword memory. The machine is cooled by an inert fluorocarbon previously used as a blood substitute.
+<p>
+[186] Fujitsu introduces its VP-400 vector supercomputer.
+<p>
+[187] Intel produces the first iPSC/1 hypercube, which contains 80286 processors connected through Ethernet controllers.
+<p>
+[188] IBM introduces the 3090 vector processor.
+<p>
+[189] W. K. Giloi's design is chosen as the basis for the German Suprenum supercomputer project.
+<p>
+[190] Thinking Machines Corporation demonstrates first CM-1 Connection Machine to DARPA.
+<p>
+[191] Inmos produces first (integer) T414 transputer. Members of the implementation group leave to found Meiko, which demonstrates its first transputer-based Computing Surface that year. Parsytec founded in Germany to build transputer-based machines; ESPRIT Supernode project begins work on floating-point transputer.
+<p>
+[192] Alliant delivers its first FX/8 vector multiprocessor machines. The processors are a custom implementation of an extended Motorola 68020 instruction set. An auto-parallelizing FORTRAN compiler is shipped with the machine.
+<p>
+[193] Denelcor closes doors.
+<p>
+[194] Dally and Seitz develop the wormhole routing model, invent virtual channels, and show deadlock-free routing can be performed using virtual channels.
+<p>
+[195] A 16-node QCD machine at Columbia University begins operation. The machine delivers 250 MFLOPS peak and 60 MFLOPS sustained performance.
+<p>
+[196] NEC SX-2 with 1 processor achieves 46 MFLOPS on 100x100 LINPACK.
+<p>
+[197] Supertek Computers, Inc. is founded by Mike Fung, a former Hewlett Packard RISC project manager.
+<p>
+[198] NEC delivers its SX-2 vector supercomputer. The machine has a 6.0 ns clock, is capable of producing 8 floating point results per clock cycle, and can be configured with up to 256 MByte of memory.
+<p>
+[199] Teradata ships the first of its DBC/1012 parallel database query engine. These machines contain Intel 8086 processors connected by proprietary tree network.
+<p>
+[200] ICL produces a 1024-processor MiniDAP for use as workstation co-processor.
+<p>
+[201] nCUBE produces the first of its nCUBE/10 hypercube multicomputers using custom VAX-like processors.
+<p>
+[202] Charles Leiserson describes the fat-tree network.
+<p>
+[203] David Jefferson describes how virtual time and time warping can be used as a basis for speculative distributed simulations.
+<p>
+[204] IBM begins the RP3 project, to build a scalable shared-memory multiprocessor using a message-combining switch similar to that in the NYU Ultracomputer.
+<p>
+[205] Pfister and Norton analyze hot spot contention in multistage networks, and describe how message combining can ameliorate its effects.
+<p>
+<h2>= * = * = * = * 1986 * = * = * = * =</h2>
+<p>
+[206] Loral Instrumentation delivers the first LDF-100 dataflow computer to the U.S. government. Two more systems are shipped before the project is shut down.
+<p>
+[207] Gul Agha, at the University of Illinois, describes a new form of the Actors model which is the foundation for much later work on fine-grained multicomputer architectures and software.
+<p>
+[208] The CrOS III programming system, Cubix (a file-system handler) and Plotix (a graphics handler) are developed for the Caltech hypercubes. These are later the basis for several widely-used message-passing programming systems.
+<p>
+[209] Scientific Computer Systems delivers first SCS-40, a Cray-compatible minisupercomputer.
+<p>
+[210] First El'brus-2 completed in the USSR. The machine contains 10 processor, and delivers 125 MIPS (94 MFLOPS) peak performance. Approximately 200 machines are later manufactured.
+<p>
+[211] Thinking Machines ships first CM-1 Connection Machine, containing up to 65536 single-bit processors connected in hypercube.
+<p>
+[212] Encore ships its first bus-based Multimax computer, which couples NS32032 processors to Weitek floating-point accelerators.
+<p>
+[213] Dally shows that low-dimensional k-ary n-cubes are more wire-efficient than hypercubes for typical values of network bisection, message length, and module pinout. Dally demonstrates the torus routing chip, the first low-dimensional wormhole routing component.
+<p>
+[214] Kai Li describes system for emulating shared virtual memory on disjoint-memory hardware.
+<p>
+[215] The Universities of Bologna, Padua, Pisa, and Rome, along with CERN and INFN, complete a 4-node QCD machine delivering 250 MFLOPS peak and 60 Mflops sustained performance.
+<p>
+[216] CRAY X-MP with 4 processors achieves 713 MFLOPS (against a peak of 840) on 1000x1000 LINPACK.
+<p>
+[217] Alan Karp offers $100 prize to first person to demonstrate speedup of 200 or more on general purpose parallel processor. Benner, Gustafson, and Montry begin work to win it, and are later awarded the Gordon Bell Prize.
+<p>
+[218] Arvind, Nikhil, and Pingali at MIT propose the I-structure, a parallel array-like structure allowing side effects. This is incorporated into the Id language, and similar constructs soon appear in other high-level languages.
+<p>
+[219] Floating Point Systems introduces its T-series hypercube, which combines Weitek floating-point units with Inmos transputers. A 128-processor system is shipped to Los Alamos.
+<p>
+[220] Active Memory Technology spun off from ICL to develop DAP products.
+<p>
+[221] Kendall Square Research Corporation (KSR) is founded by Henry Burkhardt (a former Data General and Encore founder) and Steve Frank, to build multiprocessor computers.
+<p>
+[222] GE installs a prototype 10-processor programmable bit-slice systolic array called the Warp at CMU.
+<p>
+<h2>= * = * = * = * 1987 * = * = * = * =</h2>
+<p>
+[223] Chuan-Qi Zhu and Pen-Chung Yew at CSRD describe algorithms for run-time data dependence testing. These influence the implementation of synchronization primitives on the Cedar multiprocessor.
+<p>
+[224] Piyush Mehrotra and John Van Rosendale describe BLAZE, a language for shared-memory systems. The compiler uses data distribution descriptions in its intermediate form.
+<p>
+[225] ParaSoft spun off from hypercube group at Caltech to produce commercial version of CrOS-like message-passing system.
+<p>
+[226] ETA produces first air- and liquid nitrogen-cooled versions of ETA-10 multiprocessor supercomputer. Principal architect is Neil Lincoln.
+<p>
+[227] Intel produces the iPSC/2 hypercube using the 80386/7 chip-set and circuit-switched routing. The machine includes concurrent I/O facilities.
+<p>
+[228] Sequent produces its 80386-based Symmetry bus-based multiprocessor.
+<p>
+[229] The Caltech Mark III hypercube completed. The machine uses Motorola 68020 microprocessors and wormhole routing.
+<p>
+[230] Thinking Machines Corporation introduces the CM-2 Connection Machine, which contains 64k single-bit processors connected in hypercube and 2048 Weitek floating point units. The machine's first FORTRAN compiler is developed by Compass Inc.
+<p>
+[231] Parsytec delivers its first transputer-based SuperCluster machine.
+<p>
+[232] Myrias produces a prototype 68000-based SPS-1 multiprocessor. The machine emulates shared memory at the operating system level.
+<p>
+[233] Cydrome delivers the first Cydra 5. The machine contains a single VLIW numeric processor with a 256-bit instruction word capable of 7 operations per cycle, and multiple scalar processors for I/O and general-purpose work.
+<p>
+[234] J. van Leuwen and R. B. Tan describe interval routing, a compact way of encoding distributed routing information for many topologies. This is later used in the Inmos T9000 transputer.
+<p>
+[235] V. Nageshwara Rao and Vipin Kumar propose the use of isoefficiency to assess the scalability of parallel algorithms.
+<p>
+[236] Second-generation QCD machine containing 64 nodes goes into operation at Columbia University, delivering 1 GFLOPS peak and 300 MFLOPS sustained performance.
+<p>
+[237] ETA-10 with 1 processor achieves 52 MFLOPS on 100x100 LINPACK; NEC SX-2 with 1 processor achieves 885 MFLOPS (against a peak of 1300) on 1000x1000 LINPACK.
+<p>
+[238] The first Gordon Bell Prizes for parallel performance is awarded. The recipients are Brenner, Gustafson, and Montry, for a speedup of 400-600 on variety of applications running on a 1024-node nCUBE, and Chen, De Benedictis, Fox, Li, and Walker, for speedups of 39-458 on various hypercubes.
+<p>
+[239] AMT delivers the first of its re-engineered DAPs, with 1024 single-bit processors connected in torus.
+<p>
+[240] Multiflow delivers the first Trace/200 VLIW machines, which use 256 to 1024 bits per instruction.
+<p>
+[241] Charles Seitz, working at Ametek, builds the Ametek-2010, the first parallel computer using a 2-D mesh interconnect with wormhole routing.
+<p>
+[242] Abhiram Ranade describes how message combining, butterfly networks, and a complicated routing algorithm can emulate PRAMs in near-optimal time.
+<p>
+[243] Work starts on Level 3 BLAS. The LAPACK project is begun, with the aim of producing linear algebra software for shared memory parallel computers.
+<p>
+<h2>= * = * = * = * 1988 * = * = * = * =</h2>
+<p>
+[244] The 128 processing-element SIGMA-1 dataflow machine of Japan's Electro-Technical Laboratory (ETL) delivers over 100 MFLOPS.
+<p>
+[245] Ian Foster and Stephen Taylor describe Strand, a parallel programming language based on logic programming. Strand Software Technologies produces a commercial version called Strand88.
+<p>
+[246] Hans Zima, Heinz Bast, and Hans Michael Gerndt describe SUPERB, the first automatic parallelization system for disjoint-memory computers. Ken Kennedy and David Callahan describe many of the same ideas in a paper published later the same year.
+<p>
+[247] Piyush Mehrotra and John Van Rosendale describe Kali, the first language allowing user-specified data distributions on MIMD machines. Many of these ideas later appear in Vienna FORTRAN and HPF.
+<p>
+[248] ParaSoft releases the first commercial version of its Express message-passing system.
+<p>
+[249] Convex introduces its second-generation C2 mini-supercomputers, which use some gallium arsenide gate arrays. Each machine could contain 1, 2, or 4 processors.
+<p>
+[250] CRI produces the first of its Y-MP multiprocessor vector supercomputers.
+<p>
+[251] Intel begins delivering iPSC/2 hypercubes incorporating wormhole routing.
+<p>
+[252] Silicon Graphics produces its first Power Series bus-based multiprocessor workstations, with up to 8 MIPS R2000 RISC microprocessors each.
+<p>
+[253] Work begins at Indian Centre for Development of Advanced Computing (CDAC) on a transputer-based parallel machine called PARAM.
+<p>
+[254] Thinking Machines Corporation introduces the DataVault mass storage subsystem, which uses up to 84 small disks to achieve high bandwidth and fault tolerance.
+<p>
+[255] Inmos produces the first T800 floating-point transputer; Meiko and Parsytec begin marketing T800-based machines.
+<p>
+[256] Cydrome closes doors.
+<p>
+[257] John Gustafson and Gary Montry argue that Amdahl's Law can be invalidated by increasing problem size.
+<p>
+[258] Friedemann Mattern and Colin Fidge develop implementations of Lamport's partially-ordered virtual time algorithm for distributed systems.
+<p>
+[259] The Universities of Bologna, Padua, Pisa, and Rome, along with CERN and INFN, complete a 16-node QCD machine delivering 1 GFLOPS peak and 300 Mflops sustained performance.
+<p>
+[260] CRAY Y-MP with 1 processor achieves 74 MFLOPS on 100x100 LINPACK; the same machine with 8 processors achieves 2.1 GFLOPS (against a peak of 2.6) on 1000x1000 LINPACK.
+<p>
+[261] Gordon Bell Prize awarded to Vu, Simon, Ashcraft, Grimes, and Peyton, whose static structures program achieves 1 GFLOPS on an 8-processor CRAY Y-MP.
+<p>
+[262] Rosing and Schnabel describe DINO, an extension to C for describing processor structures and data distributions for distributed-memory machines.
+<p>
+[263] Floating Point Systems Inc. changes its name to FPS Computing and buys Celerity Computing. The reformed company produces the Model 500 (Celerity 6000) mini-supercomputer with multiple scalar and vector processors.
+<p>
+[264] MasPar Computer Corp. founded by former DEC executive Jeff Kalb to develop massively-parallel SIMD machines.
+<p>
+[265] Tera Computer Co. founded by Burton Smith and James Rottsolk to develop and market a new multi-threaded parallel computer, similar to the Denelcor HEP.
+<p>
+[266] Scalable Coherent Interface (SCI) working group formed to develop standard for interconnection network providing 1 GByte per second per processor and cache coherence using many unidirectional point-to-point links.
+<p>
+[267] Mirchandaney, Saltz, Smith, Nicol and Crowley describe and implement the inspector/executor method for run-time pre-processing of loops with irregular data accesses, along with a scheme for implementing user-defined, compiler-embedded partitions.
+<p>
+[268] Patterson, Gibson, and Katz describe the use of redundant arrays of inexpensive disks (RAID) for mass storage.
+<p>
+<h2>= * = * = * = * 1989 * = * = * = * =</h2>
+<p>
+[269] Murray Cole, at the University of Edinburgh, proposes the use of algorithmic skeletons as a basis for parallel functional programming.
+<p>
+[270] A prototype of the SUPERB automatic parallelization system finished. Developed as part of the German SUPRENUM project, this translated FORTRAN 77 programs annotated with data distribution specifications into code containing explicit message-passing. A vectorizing FORTRAN 77 compiler is developed by Compass Inc.
+<p>
+[271] Scientific Computer Systems stops selling its SCS-40 Cray-compatible computer system. SCS continues to sell high-speed token ring network.
+<p>
+[272] Control Data shuts down ETA Systems in April.
+<p>
+[273] Fujitsu begins production of single-processor VP-2000 vector supercomputers.
+<p>
+[274] Evans and Sutherland, builders of high-performance graphics systems, announce the ES-1 parallel computer. Two systems are delivered before the division is shut down.
+<p>
+[275] Meiko begins using SPARC and Intel i860 processors to supplement T800s in its Computing Surface machines.
+<p>
+[276] BBN delivers its first 88000-based TC2000 multiprocessor, a descendent of the Butterfly series of machines.
+<p>
+[277] Multiflow produces its second-generation Trace/300 VLIW machines.
+<p>
+[278] Les Valiant argues that random routing and latency hiding can allow physically-realizable machines to emulate PRAMs optimally, and proposes the bulk-synchronous model as an intermediate between software and hardware.
+<p>
+[279] Third-generation QCD machine containing 256 nodes goes into operation at Columbia University, delivering 16 GFLOPS peak and 6.4 GFLOPS sustained performance.
+<p>
+[280] CRAY Y-MP with 8 processors achieves 275 MFLOPS on 100x100 LINPACK, and 2.1 GFLOPS (against a peak of 2.6) on 1000x1000 LINPACK.
+<p>
+[281] Gordon Bell Prize for absolute performance awarded to a team from Mobil and Thinking Machines Corporation, who achieve 6 GFLOPS on a CM-2 Connection Machine; prize in price/performance category awarded to Emeagwali, who achieves 400 MFLOPS per million dollars on the same platform.
+<p>
+[282] Supertek Computers, Inc., delivers its S-1 Cray-compatible minisupercomputer; 10 of these are eventually sold.
+<p>
+[283] Seymour Cray leaves Cray Research to found Cray Computer Corporation.
+<p>
+[284] National Aerospace Laboratory (NAL) begins feasibility study on Numerical Wind Tunnel in conjunction with Fujitsu, Hitachi, and NEC.
+<p>
+[285] Myrias sells its first 68020-based SPS-2 shared-memory multiprocessor.
+<p>
+[286] Guy Blelloch describes the scan-vector model of data parallelism, which relies heavily on the parallel prefix operation.
+<p>
+[287] nCUBE produces its second-generation nCUBE/2 hypercubes, again using custom processors.
+<p>
+<h2>= * = * = * = * 1990 * = * = * = * =</h2>
+<p>
+[288] Charles Koelbel's Ph.D. thesis at Purdue describes a methodology for automatically generating message-passing code from data distribution directives in Kali programs. The compiler is the first to support both regular and irregular computations using the inspector/executor strategy.
+<p>
+[289] Cray Research, Inc., purchases Supertek Computers Inc., makers of the S-1, a minisupercomputer compatible with the CRAY X-MP.
+<p>
+[290] NEC ships SX-3, the first Japanese parallel vector supercomputer. Each machine contains up to 4 processors, each with up to 4 pipeline sets, uses a 2.9 ns clock, and has up to 4 Gbyte of memory.
+<p>
+[291] Intel begins producing iPSC/860 hypercubes, using its i860 microprocessor and circuit-switched connections.
+<p>
+[292] DEC announces and delivers the VAX 9000, a shared memory vector processor running the VMS operating system.
+<p>
+[293] 4-cluster 32-processor Cedar multiprocessor becomes fully functional at CSRD.
+<p>
+[294] First MasPar MP-1 delivered. Each contains up to 16k 4-bit processors connected by both 8-way mesh and circuit-switched crossbar. The FORTRAN compiler is developed by Compass Inc.
+<p>
+[295] Myrias sells the first of its second-generation 68040-based SPS-3 shared-memory multiprocessors.
+<p>
+[296] Multiflow closes doors.
+<p>
+[297] Intel demonstrates its iWarp systolic array, a descendent of Warp using custom microprocessor instead of wire-wrapped boards.
+<p>
+[298] University of Tsukuba completes a 432 processor machine called QCDPAX in collaboration with Anritsu Corporation.
+<p>
+[299] Fujitsu VP-2600 with 1 processor achieves 2.9 GFLOPS (against a peak of 5 GFLOPS) on 1000x1000 LINPACK.
+<p>
+[300] Gordon Bell Prize in price/performance category awarded to Geist, Stocks, Ginatempo, and Shelton, who achieves 800 MFLOPS per million dollars in a high-temperature superconductivity program on a 128-node Intel iPSC/860. The prize in the compiler parallelization category is awarded to Sabot, Tennies, and Vasilevsky, who achieve 1.5 GFLOPS on a CM-2 Connection Machine with FORTRAN 90 code derived from FORTRAN 77.
+<p>
+[301] National Energy Research Supercomputer Center (NERSC) at LLNL places order with Cray Computer Corporation for CRAY-3 supercomputer. The order includes a unique 8-processor CRAY-2 computer system that is installed in April.
+<p>
+[302] Fujitus ships the first of its VP-2600 vector supercomputer.
+<p>
+[303] Fujitsu, Hitachi, and NEC build a testbed parallel vector supercomputer using four Fujitsu VP-2600s, NEC's shared memory, and Hitachi software. This machine is the result of the Superspeed project begun in 1982.
+<p>
+[304] Alliant delivers the first of its FX/2800 i860-based multiprocessors.
+<p>
+[305] Wavetracer builds the DTC (Data Transport Computer) consisting of one to four boards of 16x16x16 1-bit PEs. It is the first three-dimensional array processor.
+<p>
+[306] Level 3 BLAS published/released. The Parallel Virtual Machine (PVM) project is started to develop software needed to use heterogeneous distributed computers.
+<p>
+[307] The two ETA-10 systems at the closed John von Neumann Supercomputer Center are destroyed with sledge hammers, in order to render them useless, after no buyers are found.
+<p>
+[308] Fujitsu begins producing the AP1000, containing 64 to 512 SPARC processors connected by a point-to-point toroidal network, a global broadcast tree, and a synchronization bus.
+<p>
+[309] MIT's J-Machine project demonstrates a message-driven network interface that reduces overhead of message handling.
+<p>
+<h2>= * = * = * = * 1991 * = * = * = * =</h2>
+<p>
+[310] OSC 12.0 SISAL compiler is released by LLNL and CSU. First functional language compiler for multiprocessor vector supercomputers. SISAL programs achieve FORTRAN speeds on the CRAY X-MP and CRAY Y-MP supercomputers.
+<p>
+[311] Bill Pugh, at the University of Maryland, describes the Omega test for data dependence analysis of loops.
+<p>
+[312] Jingke Li and Marina Chen describe a systematic approach for specifying communication and optimizing an automatic mapping from access patterns to communication structures. They later obtain the first NP-completeness result for the alignment problem.
+<p>
+[313] Applied Parallel Research (APR) spun off from Pacific-Sierra Research (PSR) to develop FORGE and MIMDizer parallelization tools, and to upgrade them to handle FORTRAN 90.
+<p>
+[314] Convex ships its first C3 supercomputer, using gallium arsenide components. Each machine contains up to 8 vector processors.
+<p>
+[315] CRI produces first Y-MP C90.
+<p>
+[316] Intel begins marketing iWarp systolic array systems, featuring an LIW processor with on-chip communication, low-latency communication, and 512 kbyte to 2 Mbyte per processor.
+<p>
+[317] Sun begins shipping the SPARCserver 600 (also called Sun-4/600) series machines (shared-memory multiprocessors containing up to 4 SPARC CPUs each).
+<p>
+[318] A PARAM supercomputer containing 256 T800 transputers connected in four 64-node clusters by 96x96 crossbars begins running at India's CDAC. Alternative machine configuration containing i860s are also developed; machines are later sold to Germany, Russia, and Canada.
+<p>
+[319] Thinking Machines Corporation produces CM-200 Connection Machine, an upgraded CM-2.
+<p>
+[320] Meiko produces a commercial implementation of the ORACLE Parallel Server database system for its SPARC-based Computing Surface systems.
+<p>
+[321] Myrias closes doors.
+<p>
+[322] Jose Duato describes a theory of deadlock-free adaptive routing which works even in the presence of cycles within the channel dependency graph.
+<p>
+[323] A 256-node QCD machine begins operation at Fermilab, delivering 5 GFLOPS peak and 1 GFLOPS sustained performance.
+<p>
+[324] CRAY Y-MP C90 with 16 processors achieves 403 MFLOPS on 100x100 LINPACK; a Fujitsu VP-2600 with 1 processor achieves 4 GFLOPS (against a peak of 5 GFLOPS) on 1000x1000 LINPACK.
+<p>
+[325] David Bailey publishes a complaint about the abuse of benchmark figures, particularly by parallel computer vendors.
+<p>
+[326] Geoffrey Fox, Ken Kennedy, and others describe FORTRAN D, a language extension for distributed-memory systems. This is later one of the parents of High Performance FORTRAN (HPF).
+<p>
+[327] FPS Computing delivers the MCP-784, an 84-processor shared-memory system using Intel i860 microprocessors.
+<p>
+[328] NERSC cancels its contract to buy a CRAY-3 from Cray Computer Corp.
+<p>
+[329] Intel delivers the Touchstone Delta prototype for its Paragon multicomputer, which uses a two-dimensional mesh of i860 microprocessors with wormhole routing, to the Concurrent Supercomputing Consortium at Caltech. Commercial deliveries of Paragon begin later in the year.
+<p>
+[330] Germany's SUPRENUM project produces its first bug-free hardware using clusters of nodes based on Motorola 68020 with Weitek vector processors. No further hardware is built, as the technology used is no longer competitive.
+<p>
+[331] Thinking Machines Corporation announces the CM-5 Connection Machine, a MIMD machine containing a fat-tree of SPARCs, each of which incorporates up to four custom vector processors manufactured by TI. First machine installed at Minnesota Supercomputer Center later that year.
+<p>
+[332] BBN shuts down its Advanced Computers, Inc. subsidiary, though it continues to sell TC-2000 computers.
+<p>
+[333] AMT adds 8-bit arithmetic co-processors to the processing elements in its DAP products.
+<p>
+[334] Kendall Square Research starts to deliver 32-node KSR-1 multiprocessors. The machines use a cache-only memory architecture, with nodes connected in a high-speed ring.
+<p>
+[335] 64-processor nCUBE 2 with 48 I/O processors and 205 disks achieves 1073 transactions per second running Oracle Parallel Server---twice the speed of the fastest contemporary mainframe, at one-twentieth the cost per transaction.
+<p>
+<h2>= * = * = * = * 1992 * = * = * = * =</h2>
+<p>
+[336] The Japanese Fifth Generation Computer System project completes its 10-year research program, and puts its software into the public domain.
+<p>
+[337] Benkner, Brezany, Chapman, Mehrotra, Schwald, and Zima describe Vienna FORTRAN and Vienna FORTRAN 90, dialects of FORTRAN containing explicit data distribution directives.
+<p>
+[338] Message-Passing Interface Forum (MPI) formed to define standard for message-passing systems for parallel computers.
+<p>
+[339] FPS Computing closes doors. Selected assets are bought by CRI, which forms a Cray Research Superservers (CRS) subsidiary formed. The FPS Model 500 is renamed the Cray S-MP, and the FPS MCP is renamed the Cray APP.
+<p>
+[340] AMT closes doors, but is revived as Cambridge Parallel Processing.
+<p>
+[341] Meiko deliver the first CS-2 Computing Surface to the University of Southampton. The machine is a fat-tree of SPARC processors, each of which is coupled to a SPARC-like network interface chip and a Fujitsu microVP vector processor.
+<p>
+[342] Alliant closes doors.
+<p>
+[343] Ultra III Ultracomputer prototype begins operation at NYU. This machine is the first to do asynchronous message combining in hardware.
+<p>
+[344] 64-processor DASH multiprocessor in operation at Stanford. Machine runs multi-threaded Unix operating system.
+<p>
+[345] LAPACK software released. ScaLAPACK Project begins work on providing linear algebra software for highly parallel systems.
+<p>
+[346] CRAY Y-MP C90 with 16 processors achieves 479 MFLOPS on 100x100 LINPACK; an NEC SX-3/44 with 4 processors achieves 13.4 GFLOPS (against a peak of 22.0) on 1000x1000 LINPACK, and 20.0 GFLOPS on a 6144x6144 problem.
+<p>
+[347] Gordon Bell Prize for absolute performance awarded to Warren and Salmon, who achieves 5 GFLOPS on the Intel Touchstone Delta in a gravitational interaction tree code; prize for speedup awarded to Jones and Plassmann, who also achieves 5 GFLOPS on the same platform. Prize for price/performance awarded to Nakanishi, Rego, and Sunderam, whose Eclipse system achieves 1 GIPS per million dollars on a widely distributed network of workstations.
+<p>
+[348] The High Performance FORTRAN Forum (HPFF) is formed to define data-parallel extensions to FORTRAN.
+<p>
+[349] MasPar starts delivering its second generation machine, the MP-2. Each machine contains up to 16K custom 32-bit processors, and is binary-compatible with the earlier MP-1.
+<p>
+[350] Wavetracer closes doors.
+<p>
+[351] Anant Agarwal and others at MIT, LSI Logic, and Sun demonstrate the Sparcle, a modified SPARC which implements rapid context switching and supports user-level message-passing. The processor is used as a component in MIT's Alewife multiprocessor.
+<p>
+[352] Kendall Square Research announces its KSR-1 after testing a system with 128 processors and a second level ring interconnect.
+<p>
+[353] nCUBE introduces the nCUBE/2S family of systems based on yet another custom VLSI processor.
+<p>
+<h2>= * = * = * = * 1993 * = * = * = * =</h2>
+<p>
+[354] Version 1.0 of the High Performance FORTRAN (HPF) language specification is released.
+<p>
+[355] Cray Research delivers a Y-MP M90 with 32 Gbyte of memory to the U.S. Government, after delivering a similar machine with 8 Gbyte of memory in the previous year to the Minnesota Supercomputer Center.
+<p>
+[356] Fujitsu installs a one-of-a-kind 140-processor Numerical Wind Tunnel (NWT) machine at Japan's National Aerospace Laboratory (NAL). Each processor is a vector supercomputer with 256 Mbyte memory and a peak performance of 1.6 GFLOPS; processors are connected by crossbar network, and deliver aggregate LINPACK performance of 124.5 GFLOPS on 31920x31920 matrix. The technology in this machine is also used in Fujitsu's VPP-500 product.
+<p>
+[357] IBM delivers the first SP1 Powerparallel system based on its RISC RS/6000 processor.
+<p>
+[358] Silicon Graphics ships Challenge series of bus-based multiprocessor graphics workstations and servers, containing up to 36 MIPS R4400 RISC microprocessors.
+<p>
+[359] Lawrence Livermore National Laboratory purchases a CS-2 Computing Surface from Meiko, the first major purchase by a U.S. national laboratory from a vendor with roots outside the U.S.
+<p>
+[360] 512-node J-Machines (message-driven multicomputers) operational at MIT, Caltech, and Argonne National Laboratories.
+<p>
+[361] IBM's GF-11 system (the name stands for 11 GFLOPS), purpose-built for quantum chromodynamic calculations under the direction of Monty Denneau, finishes computation of nucleon masses.
+<p>
+[362] An NEC SX-3/44 with 4 processors achieves 15.1 GFLOPS (against a peak of 25.0) on 1000x1000 LINPACK; a Thinking Machines Corporation CM-5 achieves 59.7 GFLOPS with 1024 processors on a 52224x52224 problem.
+<p>
+[363] Cray Computer Corp. places a CRAY-3 at the National Center for Atmospheric Research (NCAR).
+<p>
+[364] NEC produces the Cenju-3, containing up to 256 VR4400SC (MIPS R4000 runalike) processors connected by an Omega network.
+<p>
+[365] Sun begins shipping SPARCcenter 1000 and 2000 servers, shared-memory multiprocessor containing up to 8 and 20 SPARC CPUs respectively.
+<p>
+[366] ScaLAPACK prototypes released for Intel's Paragon, Thinking Machines' CM-5, and PVM message-passing system.
+<p>
+[367] CRI delivers first its first T3D multicomputer to the Pittsburgh Supercomputer Center. The machine contains a 3-dimensional torus of DEC Alpha microprocessors, and is hosted by a Y-MP C90.
+<p>
+<h1>= * = * = * = * Index * = * = * = * =</h1>
+<br>
+ACPMAPS: 323<br>
+ACS: 19<br>
+Actors: 78, 207, 309, 360<br>
+Ada: 153<br>
+Adams, Duane: 33<br>
+AEC (Atomic Energy Commission): 3, 2, 20<br>
+Agarwal, Anant: 351<br>
+Agha, Gul: 207<br>
+Alewife: 351<br>
+Alliant: 143, 342<br>
+...FX/2800: 304<br>
+...FX/8: 192<br>
+Amdahl's Law: 32, 257<br>
+Amdahl, Gene: 1, 32, 292<br>
+Ametek: <br>
+...Ametek-2010: 241<br>
+AMT (Active Memory Technology): 220, 239, 333, 340<br>
+ANL (Argonne National Laboratories): 360<br>
+Anritsu: 298<br>
+APE: 215, 259<br>
+APR (Applied Parallel Research): 313<br>
+...FORGE: 313<br>
+...MIMDizer: 313<br>
+array processor: 35, 64, 79, 87, 126, 148<br>
+Arvind: 94, 218<br>
+Atlas: 4, 15<br>
+Backus, John: 95<br>
+Bailey, David: 325<br>
+Banerjee, Utpal: 84<br>
+barrier synchronization: 98<br>
+BBN (Bolt, Beranek and Newman): 332<br>
+...Butterfly: 99, 132<br>
+...Pluribus: 52<br>
+...TC2000: 276<br>
+Bell Labs: 21<br>
+Bell, Gordon: 238<br>
+benchmarking: 112, 161, 178, 196, 216, 237, 260, 280, 299, 324, 325, 346, 362<br>
+Bernstein, Arthur: 24<br>
+BESM-6: 31<br>
+BLAS (Basic Linear Algebra Subroutines)...: 112<br>
+...BLAS-1: 59<br>
+...BLAS-2: 182<br>
+...BLAS-3: 243, 306<br>
+BLAZE: 224<br>
+Blelloch, Guy: 286<br>
+Brinch Hansen, Per: 54, 97<br>
+Bryant, R. E.: 92<br>
+Bull: <br>
+...Gamma 60: 7<br>
+Burkhardt, Henry: 221<br>
+Burroughs: 88<br>
+...BSP: 65, 123<br>
+...D825: 17<br>
+...PEPE: 56, 86<br>
+Burtsev, Vsevolod S.: 43<br>
+butterfly: 242<br>
+C.mmp: 44, 91<br>
+Caltech (California Institute of Technology): 130, 150, 158, 160, 180, 213, 229, 225, 248, 329, 360<br>
+Cambridge Parallel Processing: 340<br>
+CCC (Cray Computer Corporation): 283<br>
+...CRAY-3: 301, 328, 363<br>
+CCS: 118<br>
+CDAC (Center for Development of Advanced Computing): 253, 318<br>
+CDC (Control Data Corporation): 6, 155, 272<br>
+...1604: 14<br>
+...6500: 25<br>
+...6600: 11, 18<br>
+...7600: 38<br>
+...AFP: 34, 146<br>
+...Cyberplus: 34, 45<br>
+...Cyber 200: 71<br>
+...Cyber 203: 96<br>
+...Cyber 205: 127<br>
+...Flexible Processor: 85, 146<br>
+...STAR-100: 20, 62<br>
+Cedar: 175, 223, 293<br>
+Celerity: 263<br>
+CERT-ONERA: 104<br>
+Chandy, K. Mani: 92<br>
+Chen, Marina: 312<br>
+Chen, Steve: 140<br>
+Cm*: 74<br>
+CMU (Carnegie-Mellon University): 44, 74, 91, 129, 222, 222, 297<br>
+Cocke, John: 8, 19, 107<br>
+Cohagan, William: 57<br>
+Cole, Murray: 269<br>
+Colley, Steve: 160<br>
+Columbia University: 195<br>
+Columbia University: 236, 279<br>
+Compass: 39, 61, 230, 270, 294<br>
+concurrency: 101, 118<br>
+conditional critical regions: 54<br>
+Convex: 139<br>
+...C1: 184<br>
+...C2: 249<br>
+...C3: 314<br>
+Cooley, James W.: 23<br>
+Cray, Seymour: 11, 14, 18, 38, 48, 80, 283<br>
+CRI (Cray Research Incorporated): 48, 283, 289, 339, 367<br>
+critical regions: 22<br>
+...CRAY-1: 80, 112, 161<br>
+...CRAY-2: 185<br>
+...CRAY X-MP: 140, 172, 178, 216<br>
+...CRAY Y-MP C90: 315, 324, 346<br>
+...CRAY Y-MP M90: 355<br>
+...CRAY Y-MP: 250, 260, 280<br>
+...T3D: 367<br>
+CrOS: 150, 208, 225<br>
+CRYSTAL: 312<br>
+CSP: 101, 164<br>
+CSRD (Center for Supercomputing Research and Development): 175, 223, 293<br>
+CSU (Colorado State University): 163, 310<br>
+cube-connected cycles: 133<br>
+Cydrome: 176, 256<br>
+...Cydra 5: 233<br>
+Cytron, Ron: 170<br>
+Dally, Bill: 194, 213, 309, 360<br>
+DARPA (Defence Advanced Research Projects Agency): 162<br>
+DASH: 344<br>
+data dependence: 24, 125, 152, 311<br>
+data distribution: 224, 247, 262, 267, 288, 312<br>
+data parallelism: 37, 211, 230, 264, 286<br>
+dataflow: 33, 60, 88, 94, 95, 104, 124, 151, 163, 206, 218, 244, 310<br>
+Davis, Al: 88<br>
+DDM1: 88<br>
+DEC (Digital Equipment Corporation): 5, 42, 49, 74, 120, 163, 264<br>
+...Alpha: 367<br>
+...VAX: 128, 157, 292<br>
+Denelcor: 193<br>
+...HEP: 67, 110, 144, 171<br>
+Dijkstra, Edsger: 22, 36, 75<br>
+DIME: 248<br>
+dining philosophers: 36<br>
+discrete event simulation: 92, 203<br>
+distributed computing: 58, 97, 129, 165, 347<br>
+DOACROSS: 119, 170<br>
+EGPA: 89<br>
+El'brus-1: 43, 121<br>
+El'brus-2: 210<br>
+Encore: 169, 212<br>
+...Multimax: 212<br>
+ESPRIT Supernode: 255<br>
+ETA: 155, 272<br>
+...ETA-10: 226, 237, 307<br>
+ETL (Electro-Technical Laboratory): 244<br>
+Evans and Sutherland: <br>
+...ES-1: 274<br>
+Express: 225, 248<br>
+fat tree: 202, 331<br>
+fault tolerance: 70, 82<br>
+Fermilab: 323<br>
+Ferranti: 4, 15<br>
+FFT: 23<br>
+FGCS (Fifth Generation Computer System): 137, 336<br>
+fiber optics: 165<br>
+Fisher, Josh: 106, 181<br>
+Flynn, Michael: 27<br>
+FORTRAN: 37<br>
+FORTRAN D: 326<br>
+Fortune, Steven: 102<br>
+Fox, Geoffrey: 130, 326<br>
+FP: 95<br>
+FPS (Floating Point Systems): 41, 87, 263, 339<br>
+...AP-120B: 79<br>
+...FPS-164: 126<br>
+...MCP-784: 327<br>
+...Model 500: 263<br>
+...T-series: 219<br>
+Fujitsu: 303<br>
+...microVP: 341<br>
+...AP1000: 308<br>
+...FACOM-230: 63, 81<br>
+...VP-200: 147<br>
+...VP-2000: 273<br>
+...VP-2600: 302, 299, 324<br>
+...VP-400: 186<br>
+...VPP-500: 356<br>
+functional programming: 95, 163, 179, 218, 310<br>
+futures: 179<br>
+GaAs: 249, 314<br>
+GCD test: 57<br>
+GE (General Electric): 21, 222<br>
+Gelernter, David: 183<br>
+Giloi, W. K.: 189<br>
+Goodyear: <br>
+...MPP: 93, 166<br>
+...STARAN: 55<br>
+Gordon Bell Prize: 238, 261, 281, 300, 347<br>
+Gottlieb, Allan: 136<br>
+guarded commands: 75<br>
+Gustafson's Law: 257<br>
+Halstead, Robert: 179<br>
+Handler, Sheryl: 159<br>
+Hillis, Danny: 131, 159<br>
+Hitachi: 303<br>
+...S-810: 141<br>
+Hoare, Tony: 54, 68, 101<br>
+Hockney, Roger: 90<br>
+Honeywell: 40<br>
+Honeywell 800: 12<br>
+Hoshino, T.: 113, 145<br>
+hot spots: 205<br>
+HPF (High Performance Fortran): 288, 326, 348, 354<br>
+hypercube: 130, 150, 158, 180, 173, 187, 201, 213, 208, 229, 225<br>
+I-structure: 218<br>
+IBM: 19, 37<br>
+...2938: 35<br>
+...3090: 188<br>
+...360/91: 30<br>
+...3838: 64<br>
+...704: 1<br>
+...801: 107<br>
+...GF-11: 361<br>
+...RP3: 136, 204<br>
+...RS/6000: 357<br>
+...STRETCH: 2, 9<br>
+ICL: 51, 66, 108, 200, 220<br>
+ICL/AMT DAP: 51, 66, 108, 200, 220, 239, 333<br>
+Id: 94, 218<br>
+ILLIAC-IV: 20, 39, 50, 72, 142<br>
+IMN (Institute of Mathematics, Novosibirsk): 13, 28<br>
+Inmos: 109, 191, 255<br>
+Intel: 46, 173<br>
+...iAPX 432: 76, 134, 168<br>
+...iPSC/1: 187<br>
+...iPSC/2: 227, 251<br>
+...iPSC/860: 291<br>
+...iWarp: 297, 316<br>
+...Paragon: 329<br>
+IPU (Institute of Control Problems, Moscow): 83, 116<br>
+isoefficiency: 235<br>
+ITMVT (Institute of Precision Mechanics and Computer Technology): 31, 43, 121, 210<br>
+J-Machine: 309, 360<br>
+Jefferson, David: 203<br>
+Jordan, Harry F.: 98, 171<br>
+k-ary n-cubes: 213<br>
+Kalb, Jeff: 264<br>
+Kali: 247, 288<br>
+Karp Prize: 217<br>
+Karp, Alan: 217<br>
+Kennedy, Ken: 114, 246, 326<br>
+Kermani, Parviz: 111<br>
+Kilburn, Tom: 4<br>
+Kleinrock, Leonard: 111<br>
+Koelbel, Charles: 288<br>
+KSR (Kendall Square Research): 221<br>
+...KSR-1: 334, 352<br>
+Kuck, David: 77, 119, 125<br>
+Kung, H. T.: 100<br>
+Lamport, Leslie: 61, 103<br>
+LANL (Los Alamos National Laboratories): 3, 2, 80, 219<br>
+LAPACK: 243, 345<br>
+LARC: 3, 10<br>
+Lawrie, Duncan: 73<br>
+Leiserson, Charles E.: 100, 202<br>
+Li, Jingke: 312<br>
+Li, Kai: 214<br>
+Lincoln, Neil: 62, 71, 226<br>
+Linda: 183<br>
+LINPACK: 69, 112, 161, 178, 196, 216, 237, 260, 280, 299, 324, 346, 362<br>
+LIW (Long Instruction Word): 79, 126<br>
+LLNL (Lawrence Livermore National Laboratories): 20, 62, 163, 301, 328, 310, 359<br>
+logic programming: 105, 245, 336<br>
+loop scheduling: 223, 267<br>
+...LDF-100: 151, 206<br>
+LSI: 351<br>
+MasPar: 264<br>
+...MP-1: 294<br>
+...MP-2: 349<br>
+mass storage: 254, 268<br>
+May, David: 164<br>
+Mehrotra, Piyush: 224, 247<br>
+Meiko: 191, 255<br>
+...Computing Surface: 275, 320<br>
+...CS-2: 341, 359<br>
+message combining: 136, 205, 204, 343<br>
+message passing: 150, 225, 338<br>
+Milner, Robin: 118<br>
+Minsk-222: 28<br>
+Misra, J.: 92<br>
+MIT (Massachussetts Institute of Technology): 21, 42, 60, 131, 179, 218, 309, 351, 360<br>
+Mitsui: <br>
+...PAX-64J: 177<br>
+monitors: 68<br>
+MPI (Message-Passing Interface): 338<br>
+MSC (Minnesota Supercomputer Center): 331, 346<br>
+Multics: 21, 40<br>
+Multiflow: 106, 181, 296<br>
+...Trace/200: 240<br>
+...Trace/300: 277<br>
+Multilisp: 179<br>
+multiprocessor: 26, 317, 344, 365<br>
+... asymmetric: 42, 49, 128<br>
+... symmetric: 21, 40, 120, 157<br>
+Myrias: 167, 321<br>
+...SPS-1: 232<br>
+...SPS-2: 285<br>
+...SPS-3: 295<br>
+NAL: 63, 81, 284, 356<br>
+NASA (National Aeronautics and Space Administration)<br>
+...Ames: 50, 72, 172<br>
+...Goddard: 93, 166<br>
+NCAR (National Center for Atmospheric Research): 363<br>
+nCUBE: 160, 335<br>
+...nCUBE/10: 201<br>
+...nCUBE/2: 287<br>
+...nCUBE/2S: 353<br>
+NEC: 303<br>
+...CENJU-3: 364<br>
+...SX-1: 156<br>
+...SX-2: 198, 196, 237<br>
+...SX-3: 290, 346, 362<br>
+NIIUVM (Scientific Research Institute of Control Computers, Ukraine): 83, 116<br>
+Norton, V. A.: 205<br>
+Numerical Wind Tunnel: 284<br>
+NYU (New York University): <br>
+...Ultracomputer: 136, 204, 343<br>
+Occam: 164<br>
+Omega network: 73, 364<br>
+Omega test: 311<br>
+Oracle: 335, 320<br>
+Padua, David: 119<br>
+Palmer, John: 160<br>
+Parafrase: 77<br>
+parallelization: 39, 138, 192, 246, 270<br>
+PARAM: 253, 318<br>
+ParaSoft: 225, 248<br>
+Parsys: 255<br>
+Parsytec: 191, 231<br>
+Parsytec SuperCluster: 231<br>
+PAX: 113, 145<br>
+perfect shuffle network: 53<br>
+performance metrics: 235<br>
+... n(1/2): 90<br>
+... r(infinity): 90<br>
+Petri Nets: 16<br>
+Petri, C. A.: 16<br>
+PFC: 114<br>
+Pfister, Gregory: 205<br>
+PRAM (Parallel Random Access Machine): 102<br>
+...emulation: 242, 278<br>
+Preparata, Franco: 133<br>
+program transformation: 29, 119, 138<br>
+programming languages: 37, 164, 171, 183, 224, 247, 262, 288<br>
+PS-2000: 83, 116<br>
+PSR (Pacific-Sierra Research): 148, 313<br>
+Purdue University: 288<br>
+PVM: 306, 366<br>
+QCD: 113, 145, 195, 215, 236, 259, 279, 323<br>
+QCDPAX: 298<br>
+RAID (Redundant Array of Inexpensive Disks): 268<br>
+Ranade, Abhiram: 242<br>
+Rattner, Justin: 173<br>
+Rau, B. R.: 176<br>
+Reddaway, Stewart: 51<br>
+Remington Rand: 3, 10<br>
+rendezvous: 153<br>
+Rice University: 114, 152<br>
+ring network: 165<br>
+RISC (Reduced Instruction Set Computer): 107<br>
+routing: 111, 202<br>
+... adaptive: 322<br>
+... interval: 234<br>
+... random: 122, 278<br>
+... wormhole: 194, 213, 241, 329<br>
+RPC (Remote Procedure Call): 97, 129<br>
+scalability: 235, 257<br>
+ScaLAPACK: 345, 366<br>
+scan-vector model: 286<br>
+Schwartz, J. T.: 117<br>
+SCI (Scalable Coherent Interface): 266<br>
+SCS (Scientific Computer Systems): 154, 271<br>
+...SCS-40: 209<br>
+Seitz, Charles: 130, 194, 241<br>
+semaphore: 36<br>
+Sequent: 168<br>
+...Balance: 174<br>
+...Symmetry: 228<br>
+SGI (Silicon Graphics Incorporated): 135<br>
+...Challenge: 358<br>
+...Power Series: 252<br>
+shared virtual memory: 214<br>
+SIGMA-1: 244<br>
+SISAL: 163, 310<br>
+skeletons: 269<br>
+Slotnick, Daniel: 8, 20, 32<br>
+Smith, Burton: 67, 110, 265<br>
+software pipelining: 87, 176<br>
+SOLOMON: 8<br>
+Sparcle: 351<br>
+standards: 59, 69, 112, 338<br>
+Stanford University: 33, 344<br>
+Stone, Harold: 53<br>
+Strand88: 245<br>
+Sun: 317, 351, 365<br>
+SUPERB: 246, 270<br>
+Supernode: 191<br>
+superscalar: 19<br>
+Superspeed: 149<br>
+Supertek: 197, 289<br>
+Supertek S-1: 282<br>
+SUPRENUM: 189, 270, 330<br>
+systolic arrays: 100, 222, 297, 316<br>
+Tandem: 70, 165<br>
+...NonStop: 82<br>
+taxonomy: 27<br>
+Telmat: 255<br>
+Tera: 265<br>
+Teradata: 115<br>
+...DBC/1012: 199<br>
+The Force: 171<br>
+Thornton, Jim: 14, 18, 25, 62<br>
+TI (Texas Instruments): 331<br>
+timewarp: 203<br>
+...ASC: 20, 47, 57<br>
+TMC (Thinking Machines Corporation): 159<br>
+...CM-1: 131, 190, 211<br>
+...CM-2: 230<br>
+...CM-200: 319<br>
+...CM-5: 331, 362<br>
+...DataVault: 254<br>
+trace scheduling: 106<br>
+transputer: 109, 191, 219, 234, 255, 253, 318<br>
+Trilogy: 292<br>
+Tukey, John W.: 23<br>
+U-Interpreter: 94<br>
+ultracomputer: 117<br>
+UNIVAC: <br>
+...1100/80: 148<br>
+...1108: 26<br>
+University: <br>
+...of California (Irvine): 94<br>
+...of Edinburgh: 118, 269<br>
+...of Erlangen: 89<br>
+...of Illinois: 77, 84, 119, 138, 170, 175, 293<br>
+...of Kyoto: 113<br>
+...of Manchester: 4, 15, 124, 163<br>
+...of Maryland: 311<br>
+...of Rome: 215, 259<br>
+...of Southampton: 341<br>
+...of Tsukuba: 145, 177, 298<br>
+...of Utah: 88<br>
+...of Waterloo: 105<br>
+Valiant, Les: 122, 278<br>
+Van Rosendale, John: 224, 247<br>
+Van Zandt, John: 151, 206<br>
+vectorization: 29, 47, 57, 61, 77, 84, 114, 119, 125, 138, 152, 170, 270, 311<br>
+VECTRAN: 37<br>
+Vienna FORTRAN: 337<br>
+virtual channels: 194<br>
+virtual cut-through: 111<br>
+virtual time: 103, 258<br>
+VLIW (Very Long Instruction Word): 106, 176, 233, 240, 277<br>
+Vuillemin, Jean: 133<br>
+Warp: 222<br>
+Wavetracer: 350<br>
+...DTC: 305<br>
+Wolfe, Mike: 125, 138<br>
+Wyllie, James: 102<br>
+Xerox: 58, 129<br>
+Yale: 106, 183<br>
+Yevreinov, E. V.: 13, 28<br>
+Zima, Hans: 246, 337<br>
+<br>
+<hr>
+&copy; Gregory V. Wilson, gvw@cs.toronto.edu, October 1994.
+<hr>
+Last updated 94/10/28
+</body>
+</html>
+
